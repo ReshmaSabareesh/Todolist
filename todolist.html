@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="wrapper2">
+        <nav class="navbar navbar-dark bg-dark" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>    
+            </div>
+            <a class="navbar-brand" href="#">To Do List</a>
+            <div class="navbar-collapse collapse">
+              <!-- <ul class="nav navbar-nav navbar-left">
+                  <li><a href="#">Left</a></li>
+                  <li><a href="#about">Left</a></li>
+              </ul> -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a style="color: black;"  href="./index.html">Home</a></li>
+                <li><a style="color: black;" href="./index.html">Log out</a></li>
+              </ul>
+            </div>
+        </nav>
+        <div style="text-align: center;" >
+         <h1>
+            WELCOME
+         </h1> 
+        <button type="button" id="things" onclick="displayList()">To Do List</button>
+        <table id="list"> 
+        </table>
+        </div>
+        <footer id="container" hidden></footer>
+    </div>
+    <script src="./todolist.js"></script>
+</body>
+</html>

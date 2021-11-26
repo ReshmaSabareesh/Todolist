@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+        <!--Data or Content-->
+            <div class="box-1">
+                <div class="content-holder">
+                    <h2>Hello!</h2>
+                    <p>Sign in to continue to your account </p>
+                  
+                </div>
+            </div>
+        <!--Forms-->
+            <div class="box-2">
+               <div class="login-form-container">
+                <form action="todolist.html" onsubmit = "return validate()">
+
+                    <h1>Login Form</h1>
+                    <input type="text"  id="userid" placeholder="Username" class="input-field" required/>
+                    <br><br>
+                    <input type="password" id="password" placeholder="Password" class="input-field" required/>
+                    <br><br>
+                    <button class="login-button" type="submit">Login</button>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
