@@ -13,14 +13,14 @@
 }
 
 .navbar-brand{
-    font-size:25px;
+    font-size:20px;
     font-style: italic;
     font-weight: bold;
     color:black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 li{
-    font-size:25px;
+    font-size:22px;
     font-style: italic;
     font-weight: bold;
     color:black;
@@ -35,19 +35,6 @@ h1
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
-.wrapper2{
-    width: 100%;
-    height: 1400%;
-    position:absolute;
-    background: linear-gradient(45deg,#f0bbbe1f, #bcbfc5, #6967c4);
-    background-size: 2000% 100%;
-    animation: gradient 16s linear infinite;
-    animation-direction: alternate;
-}
-@keyframes gradient {
-    0% {background-position: 0%}
-    100% {background-position: 100%}
-}
 .container
 {
     display: grid;
@@ -143,13 +130,22 @@ h1
     border-radius: 15px;
 }
 #list thead{
-    font-size: x-large;
-    text-align: center;
+    font-size: large;
+    text-align: justify;
     padding: 12px;
+
+    color:antiquewhite
+}
+#list th{
+    border: 1px solid #ddd;
+    padding: 12px;
+    color: antiquewhite;
+    text-align: center;
 }
 #list td{
     border: 1px solid #ddd;
     padding: 12px;
+    color: antiquewhite;
 }
 #list tr:hover{
 background-color:slategray;

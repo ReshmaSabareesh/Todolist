@@ -1,35 +1,21 @@
-function validate(userid,password,callback){
-    let userid = document.getElementById("userid");
-    let password = document.getElementById("password");
-     if(userid.value != '' && password.value != '')
-     {
-        if (userid.value == "admin"){
-            if(password.value == "12345"){
-                alert("login credentials are valid");
-                return true;
-            }
-            else{
-                alert("password is invalid");
-                return false;
-            }
+
+function loginValidate(checkSuccess) {
+    let userName = document.getElementById("userid").value;
+    let password = document.getElementById("password").value;
+    checkSuccess(userName,password);
+} 
+function onSuccess(uname,pwd) {
+        if (uname == "admin" && pwd == "12345") {
+            alert("Login credentials are valid");
+            
+            document.querySelector("form").action = "./todolist.html";
         }
-        else{
-            alert("Email is invalid");
-            return false;
+        else {
+            alert("Invalid login");
         }
-     }
-     else{
-         alert("please Enter valid Email-id & Password");
-         return false;
-    }
-    
 }
 
-function callback() {
-    
-    window.location.href = "./todolist.html";
-   
-
-}
-
+function onLogin() {
+    loginValidate(onSuccess);
+} 
  

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To Do List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -21,7 +22,7 @@
         <!--Forms-->
             <div class="box-2">
                <div class="login-form-container">
-                <form action="todolist.html" onsubmit = "return validate()">
+                <form  onsubmit = "onLogin()">
 
                     <h1>Login Form</h1>
                     <input type="text"  id="userid" placeholder="Username" class="input-field" required/>
