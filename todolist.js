@@ -47,7 +47,7 @@ function checkcounter()
         }
     }
     if(count==5){
-        alert("Good Job! You have been vompleted 5 tasks");
+        alert("Good Job! You have been completed 5 tasks");
         alert("press OK to refresh your page");
         location.reload();
     }
