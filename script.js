@@ -1,4 +1,4 @@
-function validate(callback){
+function validate(userid,password,callback){
     let userid = document.getElementById("userid");
     let password = document.getElementById("password");
      if(userid.value != '' && password.value != '')
@@ -7,7 +7,6 @@ function validate(callback){
             if(password.value == "12345"){
                 alert("login credentials are valid");
                 return true;
-                callback();
             }
             else{
                 alert("password is invalid");
@@ -23,7 +22,7 @@ function validate(callback){
          alert("please Enter valid Email-id & Password");
          return false;
     }
-
+    
 }
 
 function callback() {

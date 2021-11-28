@@ -1,5 +1,5 @@
 function displayList() {
-    document.getElementById("container").hidden=false;
+    // document.getElementById("container").hidden=false;
     const xhr=new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4 && xhr.status == 200){
